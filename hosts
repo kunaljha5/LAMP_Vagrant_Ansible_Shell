@@ -1,0 +1,26 @@
+[web]
+machine1 ansible_host=192.168.77.21
+machine2 ansible_host=192.168.77.22
+machine3 ansible_host=192.168.77.23
+
+
+[db]
+machine3
+
+[db:vars]
+ansible_connection=ssh
+ansible_user=vagrant
+ansible_ssh_pass=vagrant
+
+
+
+[web:vars]
+ansible_connection=ssh
+ansible_user=vagrant
+ansible_ssh_pass=vagrant
+
+[localhosts]
+127.0.0.1
+ansible_connection=ssh
+ansible_user=ejhakun
+
